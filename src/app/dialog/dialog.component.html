@@ -5,7 +5,7 @@
 <div mat-dialog-content>
   <mat-tab-group>
     <mat-tab label="טאב ראשון">
-      <app-search-bar (searchItem)= "filterList($event)"></app-search-bar>
+      <app-search-bar [placeholderText] ="'טאב ראשון'" (searchItem)= "filterList($event)"></app-search-bar>
       <div class="scroller-container">
       <app-scroller (itemSelected)="onItemSelect($event)" [isMultiple]="false" [items]="this.filteredItems"></app-scroller>
       </div>

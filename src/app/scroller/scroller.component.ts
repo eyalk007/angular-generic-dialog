@@ -11,12 +11,11 @@ import { MatSelectionListChange } from '@angular/material/list';
 })
 export class ScrollerComponent implements OnInit {
   @Input()items: string[] = [];
-  @Input()isMultiple: boolean = false;
+  @Input()isMultiple: boolean = true;
   @Output() itemSelected = new EventEmitter<string>();
  private selectedItem: string = '';
  
   constructor() { }
-
 
   clickedItem(item : string) {
     this.selectedItem = item === this.selectedItem ? '' : this.selectedItem = item;

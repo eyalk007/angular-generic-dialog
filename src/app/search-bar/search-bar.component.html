@@ -1,7 +1,7 @@
 
-<mat-form-field [floatLabel]="'never'">
-    <div class="search-container">
-    <input matInput [(ngModel)]="searchText" (input)="this.filterFunc()" class="search-text"  placeholder="placeHolder">
-    <mat-icon class="search-icon" >search</mat-icon>
+<mat-form-field  class="search-container"  [floatLabel]="'never'">
+    <div class="content-container">
+    <mat-icon matSuffix  class="search-icon" >search</mat-icon>
+    <input matInput [(ngModel)]="searchText" (input)="this.filterFunc()" class="search-text"  placeholder="{{this.placeholderText}}">
 </div>
 </mat-form-field>

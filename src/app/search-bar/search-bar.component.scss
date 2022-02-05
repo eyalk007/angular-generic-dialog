@@ -1,4 +1,11 @@
 .search-container{
-        display: inline-flex;
+  text-align: justify;
+.content-container{
       direction: rtl;
+      display: inline-flex;
+      justify-content: space-between;
+      .search-icon{
+        margin-left:3px;
+      }
+}
 }
