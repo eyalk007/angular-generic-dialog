@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+direction: rtl; }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    direction: rtl;
+  }
+  
+  #scroll{
+    direction:rtl; 
+    overflow:auto; 
+    height:50px; 
+    width:50px;}
+
+#scroll div{
+    direction:rtl;
+}
+
+.mat-dialog-container {
+  padding: 2px 2px;
+  overflow: hidden;
+}
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: whitesmoke;
+    border-radius: 10px;
+    direction: rtl;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  

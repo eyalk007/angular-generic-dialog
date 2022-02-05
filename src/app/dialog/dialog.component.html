@@ -1,0 +1,21 @@
+<div class="dialog-container">
+<div class="title-container"> 
+<span mat-dialog-title>כותרת</span>
+</div>
+<div mat-dialog-content>
+  <mat-tab-group>
+    <mat-tab label="טאב ראשון">
+      <app-search-bar (searchItem)= "filterList($event)"></app-search-bar>
+      <div class="scroller-container">
+      <app-scroller (itemSelected)="onItemSelect($event)" [isMultiple]="false" [items]="this.filteredItems"></app-scroller>
+      </div>
+    </mat-tab>
+    <mat-tab [disabled] = "this.selectedItem === ''" label="שני">
+      <app-search-bar (searchItem)= "filterList($event)"></app-search-bar>
+      <div class="scroller-container">
+      <app-scroller  (itemSelected)="onItemSelect($event)" [isMultiple]="false" [items]="this.filteredItems"></app-scroller>
+    </div>
+    </mat-tab>  
+  </mat-tab-group>
+</div>
+</div>

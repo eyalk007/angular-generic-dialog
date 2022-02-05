@@ -1,0 +1,17 @@
+.dialog-container{
+    direction: rtl;
+    .mat-dialog-title{
+     margin: 0;
+     border-bottom: 1px solid grey;
+    }
+}
+.scroller-container {
+    overflow: hidden;
+    height: 35vh;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+.mat-dialog-container {
+    padding: 2px 2px;
+    overflow: hidden;
+  }

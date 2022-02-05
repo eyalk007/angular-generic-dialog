@@ -1,0 +1,11 @@
+.example-viewport {
+    height: 100%;
+    width: auto;
+   direction: ltr;
+   overflow-y: scroll;
+   .example-item-detail {
+    direction: rtl;
+  }
+
+  }
+  

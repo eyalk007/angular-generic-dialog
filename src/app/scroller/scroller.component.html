@@ -1,0 +1,8 @@
+<cdk-virtual-scroll-viewport autosize [itemSize]="5" class="example-viewport">
+<mat-selection-list [multiple]="this.isMultiple" dense> 
+        <mat-list-option class="example-item-detail"  
+    *cdkVirtualFor="let item of this.items;" [value]="item" (click)="this.clickedItem(item)" >
+    {{item}}
+        </mat-list-option>
+</mat-selection-list>
+</cdk-virtual-scroll-viewport>
